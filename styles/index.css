@@ -1,0 +1,189 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+header, .header-img, .header-text, h1, h2, h3 {
+  padding: 2px;
+  border: solid black;
+}
+
+body {
+  color: #766621;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+header {
+  background-color: #EDEAE1;
+  height: 70vh;
+  display: flex;
+}
+
+header .header-img {
+  width: 35%;
+  background-image: url('../images/header-img.jpeg');
+  background-size: cover;
+}
+
+header .header-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  background: #7388a0;
+  padding: 12vh 20%;
+}
+
+.about .text-container {
+  background-color: #fbe1b6;
+  padding: 5%;
+  text-align: center;
+}
+
+.skills {
+  background-color: #fbe1b6;
+  padding: 8vh 2%;
+  text-align: center;
+}
+
+/* .skills .skill-container, .skills .skill-item {
+  border: solid;
+  padding: 5px;
+} */
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-container i {
+  font-size: 30px;
+  margin: 10%;
+}
+
+
+.skill-container h4 {
+  text-align: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 5px;
+}
+
+@media (max-width: 940px) {
+  header .header-text, header .header-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header .header-img {
+    height: 35vh;
+    margin: 2%;
+  }
+
+  .skill-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-container .skill-item {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    padding: 8vh 10%;
+  }
+}
