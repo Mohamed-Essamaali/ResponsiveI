@@ -64,9 +64,8 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-header, .header-img, .header-text, h1, h2, h3 {
-  padding: 2px;
-  border: solid black;
+.skills , .skill-item, h4, p, i{
+  border: 2px solid blue;
 }
 
 body {
@@ -131,10 +130,14 @@ header .header-text {
   border: solid;
   padding: 5px;
 } */
+.header-text h1 {
+text-transform: uppercase;
+}
 
 .skill-container {
   display: flex;
   justify-content: space-between;
+ ;
 }
 
 .skill-container i {
@@ -152,7 +155,10 @@ header .header-text {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  padding: 5px;
+  
+}
+p {
+  padding: 1% 2%;
 }
 
 @media (max-width: 940px) {
