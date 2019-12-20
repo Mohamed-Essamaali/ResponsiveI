@@ -64,9 +64,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.skills , .skill-item, h4, p, i{
-  border: 2px solid blue;
-}
+
 
 body {
   color: #766621;
@@ -137,12 +135,14 @@ text-transform: uppercase;
 .skill-container {
   display: flex;
   justify-content: space-between;
+  
  ;
 }
 
 .skill-container i {
   font-size: 30px;
   margin: 10%;
+
 }
 
 
@@ -155,6 +155,7 @@ text-transform: uppercase;
   flex-direction: column;
   align-items: center;
   text-align: justify;
+  border: 1px solid #7388a0;
   
 }
 p {
@@ -168,14 +169,22 @@ p {
 }
 
 @media (max-width: 767px) {
+
+
   header {
     flex-direction: column-reverse;
     align-items: center;
+    
   }
 
   header .header-img {
     height: 35vh;
     margin: 2%;
+  }
+  .header-text {
+    flex-direction: column;
+    justify-content: space-between;
+    
   }
 
   .skill-container {
@@ -191,5 +200,21 @@ p {
 @media (max-width: 500px) {
   .about {
     padding: 8vh 10%;
+   
+  }
+  header {
+    height: 60vh;
+    justify-content: center;
+  }
+  .header-text{
+    padding: 5%;
+    
+  }
+
+  .skill-container {
+    flex-direction: column;
+  }
+  .header-img {
+    display: none;
   }
 }
